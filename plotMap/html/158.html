@@ -1,0 +1,350 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_f1e47cb2b2e240f58fdbca898d58c578 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_f1e47cb2b2e240f58fdbca898d58c578" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_f1e47cb2b2e240f58fdbca898d58c578 = L.map('map_f1e47cb2b2e240f58fdbca898d58c578', {
+                                           center:[39.914998,116.404355],
+                                           zoom: 12,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_4e63a57223fe4b46895a52909e2b7408 = L.tileLayer(
+                'https://api.mapbox.com/styles/v1/silocean/cizjbcwg2005g2spalb57ekwp/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoic2lsb2NlYW4iLCJhIjoiY2l6amJiNTdvMDM5ejMybDR4bWk2aHNlYyJ9.Rh6UgVRagKRrJmylNagSgg',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'my style',
+                    detectRetina: false
+                    }
+                ).addTo(map_f1e47cb2b2e240f58fdbca898d58c578);
+
+        
+        
+            
+
+            var circle_marker_e2993a8504b442abb5e1d663c192a2ef = L.circle(
+                [39.9755305507,116.331384072],
+                5,
+                {
+                    color: '#ff0000',
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f1e47cb2b2e240f58fdbca898d58c578);
+            
+        
+            
+
+            var circle_marker_9538ce2540a448b3bbb9274b0b35173f = L.circle(
+                [39.9756556364,116.331694242],
+                5,
+                {
+                    color: '#ff0000',
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f1e47cb2b2e240f58fdbca898d58c578);
+            
+        
+            
+
+            var circle_marker_22c513920e3b4c089ac16fbc085d63eb = L.circle(
+                [39.9764109375,116.331347281],
+                5,
+                {
+                    color: '#ff0000',
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f1e47cb2b2e240f58fdbca898d58c578);
+            
+        
+            
+
+            var circle_marker_d31f8e6690c54672892832c611467296 = L.circle(
+                [39.9751451803,116.335172672],
+                5,
+                {
+                    color: '#ff0000',
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f1e47cb2b2e240f58fdbca898d58c578);
+            
+        
+            
+
+            var circle_marker_569a0cf0d688423ba38f33ddc1417cb4 = L.circle(
+                [39.97523858,116.33601694],
+                5,
+                {
+                    color: '#ff0000',
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f1e47cb2b2e240f58fdbca898d58c578);
+            
+        
+            
+
+            var circle_marker_b74d6472fbcd46dbb7e20c73746fff9c = L.circle(
+                [31.257847,121.488723464],
+                5,
+                {
+                    color: '#ff0000',
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f1e47cb2b2e240f58fdbca898d58c578);
+            
+        
+            
+
+            var circle_marker_4949d5776e6e4fc1b38a70c7e0d0ea26 = L.circle(
+                [31.2574682769,121.488032431],
+                5,
+                {
+                    color: '#ff0000',
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f1e47cb2b2e240f58fdbca898d58c578);
+            
+        
+            
+
+            var circle_marker_258c3350c99a44d98b6ab13b9a1d5cc0 = L.circle(
+                [31.2994054054,121.512459162],
+                5,
+                {
+                    color: '#ff0000',
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f1e47cb2b2e240f58fdbca898d58c578);
+            
+        
+            
+
+            var circle_marker_be55ed589c0b49c8b31137f3feb6d111 = L.circle(
+                [31.2984472,121.5122432],
+                5,
+                {
+                    color: '#ff0000',
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f1e47cb2b2e240f58fdbca898d58c578);
+            
+        
+            
+
+            var circle_marker_aa21d8cc078f40f4a541c9e0222dbd2f = L.circle(
+                [31.3031502941,121.509577412],
+                5,
+                {
+                    color: '#ff0000',
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f1e47cb2b2e240f58fdbca898d58c578);
+            
+        
+            
+
+            var circle_marker_10b7a51887964f799b00379aca7277ec = L.circle(
+                [39.9926692857,116.323994238],
+                5,
+                {
+                    color: '#ff0000',
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f1e47cb2b2e240f58fdbca898d58c578);
+            
+        
+            
+
+            var circle_marker_be57f10dd8bd4df9aa0ed1cbd1ee56dd = L.circle(
+                [39.9827534138,116.311270414],
+                5,
+                {
+                    color: '#ff0000',
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f1e47cb2b2e240f58fdbca898d58c578);
+            
+        
+            
+
+            var circle_marker_68a8dfed7bea4466b743bcf3f58c8e79 = L.circle(
+                [31.296250375,121.499352375],
+                5,
+                {
+                    color: '#ff0000',
+                    fillColor: '#ff0000',
+                    fillOpacity: 0.6
+                    }
+                )
+                .addTo(map_f1e47cb2b2e240f58fdbca898d58c578);
+            
+        
+        
+        </script>
+        
